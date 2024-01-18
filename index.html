@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourMeal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container-header__container">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <div class="header-title__container">
+                <div class="header__burger">
+                    <img src="images/header-burger.png" class="img__header-burger">
+                </div>
+
+                <div class="header__title-container">
+                    <h1 class="header__title">Только самые <span>сочные бургеры!</span></h1>
+
+                        <p class="header__appeal">Бесплатная доставка от 599₽</p>
+                </div>
+
+                <div class="header__burger2">
+                    <img src="images/header-burger.png" class="img__header-burger">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="navigation">
+            <div class="container">
+                <ul class="navigation-list">
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_burger">Бургеры</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_snack">Закуски</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_hot-dog">Хот-доги</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_combo">Комбо</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_shawarma">Шаурма</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_pizza">Пицца</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_wok">Вок</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_dessert">Десерты</button>
+                    </li>
+
+                    <li class="navigation__item">
+                        <button class="navigation_button navigation_button_sause">Соусы</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalogg">
+                    <div class="catalog_order order order_open">
+                        <section class="order_wrapper">
+                            <div class="order_wrap-title">
+                                <h2 class="order-title">Корзина</h2>
+
+                                <div class="order_count">4</div>
+                            </div>
+
+                            <div class="order_wrap_list">
+                                <ul class="order_list">
+                                    <li class="order_item">
+                                        <img src="images/super_cheese.png" alt="Супер сырный">
+
+                                        <div class="order_product">
+                                            <h3 class="order_product-title">Супер сырный</h3>
+
+                                            <p class="order_product-weight">512 г</p>
+
+                                            <p class="order_product-price">550₽</p>
+                                        </div>
+
+                                        <div class="order_product-count">
+
+                                            <button class="count_minus">-</button>
+                                            <p class="count_amount">1</p>
+                                            <button class="count_plus">+</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="order_item">
+                                        <img src="images/home-hot-dog.png" alt="Домашний хот-дог">
+
+                                        <div class="order_product">
+                                            <h3 class="order_product-title">Домашний хот-дог</h3>
+
+                                            <p class="order_product-weight">250 г</p>
+
+                                            <p class="order_product-price">290₽</p>
+                                        </div>
+
+                                        <div class="order_product-count">
+
+                                            <button class="count_minus">-</button>
+                                            <p class="count_amount">1</p>
+                                            <button class="count_plus">+</button>
+                                        </div>
+                                    </li>
+
+                                    <li class="order_item">
+                                        <img src="images/french-fries.png" alt="Картошка фри">
+
+                                        <div class="order_product">
+                                            <h3 class="order_product-title">Картошка фри</h3>
+
+                                            <p class="order_product-weight">180 г</p>
+
+                                            <p class="order_product-price">250₽</p>
+                                        </div>
+
+                                        <div class="order_product-count">
+
+                                            <button class="count_minus">-</button>
+                                            <p class="count_amount">1</p>
+                                            <button class="count_plus">+</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            
+                                <div class="order_total">
+                                    <p>Итого</p>
+                                    <p> 
+                                        <span class="order_total-amount">1279</span>
+                                        <span class="currency">₽</span>
+                                    </p>
+                                </div>
+
+                                <button class="order_submit">
+                                    Оформить заказ
+                                </button>
+
+                                <div class="order_wrrap-appeal">
+                                    <p class="order_appeal">Бесплатная доставка</p>
+                                    <button class="order_button">Свернуть</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="catalog_wraper">
+                        <h2 class="catalog_title">Бургеры</h2>
+
+                        <div class="catalog_wrap_list">
+                            <ul class="catalog_list">
+                                <li class="catalog_item">
+                                    <article class="product">
+                                        <img src="images/meat-bomb.png" alt="Мясная бомба" class="product_image">
+
+                                        <p class="product_price">689₽</p>
+
+                                        <button class="product_detail">Мясная бомба</button>
+
+                                        <p class="product_weight">520г</p>
+
+                                        <button class="product_add">Добавить</button>
+                                    </article>
+                                </li>
+
+                                <li class="catalog_item">
+                                    <article class="product">
+                                        <img src="images/super_cheese.png" alt="Супер сырный" class="product_image">
+
+                                        <p class="product_price">550₽</p>
+
+                                        <button class="product_detail">Супер сырный</button>
+
+                                        <p class="product_weight">512г</p>
+
+                                        <button class="product_add">Добавить</button>
+                                    </article>
+                                </li>
+
+                                <li class="catalog_item">
+                                    <article class="product">
+                                        <img src="images/hearty.png" alt="Сытный" class="product_image">
+
+                                        <p class="product_price">639₽</p>
+
+                                        <button class="product_detail">Сытный</button>
+
+                                        <p class="product_weight">580г</p>
+
+                                        <button class="product_add">Добавить</button>
+                                    </article>
+                                </li>
+
+                                <li class="catalog_item">
+                                    <article class="product">
+                                        <img src="images/heavy-blow.png" alt="Тяжелый удар" class="product_image">
+
+                                        <p class="product_price">480₽</p>
+
+                                        <button class="product_detail">Тяжелый удар</button>
+
+                                        <p class="product_weight">470г</p>
+
+                                        <button class="product_add">Добавить</button>
+                                    </article>
+                                </li>
+
+                                <li class="catalog_item">
+                                    <article class="product">
+                                        <img src="images/classic.png" alt="Вечная классика" class="product_image">
+
+                                        <p class="product_price">450₽</p>
+
+                                        <button class="product_detail">Вечная классика</button>
+
+                                        <p class="product_weight">450г</p>
+
+                                        <button class="product_add">Добавить</button>
+                                    </article>
+                                </li>
+
+                                <li class="catalog_item">
+                                    <article class="product">
+                                        <img src="images/italian.png" alt="Итальянский" class="product_image">
+
+                                        <p class="product_price">560₽</p>
+
+                                        <button class="product_detail">Итальянский</button>
+
+                                        <p class="product_weight">510г</p>
+
+                                        <button class="product_add">Добавить</button>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_container"> 
+                <div class="footer_logo">
+                    <img src="images/footer_logo.png" alt="">
+                </div>
+
+                <div class="footer_contacts">
+                    <div class="phone_number">
+                        <h4 class="text_phone">Номер для заказа</h4>
+
+                        <button class="number_phone">+7(800)555-35-35</button>
+                    </div>
+
+                    <div class="social_network">
+                        <h4 class="social_network_text">Мы в соцсетях</h4>
+
+                        <div class="social_network_logo">
+                            <button class="social_logo">
+                                <img class="logo_vk" src="images/logo-vk.png" alt="">
+                            </button>
+
+                            <button class="social_logo">
+                                <img class="logo_telegram" src="images/logo-tlgrm.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
