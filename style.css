@@ -1,12 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0px 0px;
     background-color: #F9F9F9;
+    overflow-x: hidden;
 }
 
 .header{
     background-image: url("data:image/svg+xml,%3Csvg width='768' height='349' viewBox='0 0 768 349' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='384' cy='-921' r='1270' fill='%23FFAB08'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
-    background-size: 2880px;
+    background-size: cover; /* выравнивает фон, очень часто используется это значение (cover)*/
     background-position: center bottom;
     padding-left: 0px;
     margin-bottom: 40px;
@@ -70,10 +75,6 @@ button{
     border: none;
 }
 
-/*.navigation{
-    margin-bottom: 50px;
-}*/
-
 .navigation-list{
     display: flex;
     overflow-x: auto;
@@ -84,6 +85,7 @@ button{
     column-gap: 24px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
 }
 
 .navigation_button{
@@ -147,7 +149,8 @@ button{
 
 .catalog_list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
     gap: 10px;
     padding-left: 0px;
 }
@@ -162,7 +165,6 @@ button{
 }
 
 .order_wrapper{
-    width: 300px;
     box-shadow: 0px 0px 10px 0px #00000029;
     border-radius: 12px;
     padding: 2px 10px 16px 10px;
@@ -208,11 +210,9 @@ button{
     border-radius: 12px;
 }
 
-.catalogg{
+.catalog_container{
     display: flex;
     justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .catalog_order{
@@ -261,10 +261,9 @@ button{
 .order_item{
     display: flex;
     text-align: center;
-    width: 290px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
-    height: 52px;
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 1px #F2F2F3 solid;
@@ -332,14 +331,14 @@ button{
 }
 
 .catalog_item{
-    width: 300px;
+    width: 100%;
     background-color: white;
     box-shadow: 0px 0px 10px 0px #00000029;
     border-radius: 12px;
 }
 
 .product_image{
-    width: 276px;
+    width: 100%;
     border-radius: 12px;
     height: 220px;
     margin-left: auto;
@@ -456,8 +455,8 @@ footer{
 
 @media (max-width: 1300px){
     .container{
-        width: auto;
-        margin: 0 10px;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .catalog {
@@ -466,15 +465,20 @@ footer{
         justify-content: center;
     }
 
-    .catalogg{
-        width: 950px;
+    .catalog_list {
+        grid-template-columns: repeat(2, 300px);
+        justify-content: start;
     }
+
 }
 
 @media(max-width: 1024px){
-    .catalogg{
-        display: block;
-        width: 700px;
+    .catalog_container {
+        flex-direction: column;
+    }
+    
+    .catalog_wraper{
+        margin-left: 0px; 
     }
 
     .order_wrap_list{
@@ -486,14 +490,13 @@ footer{
         margin-top: 0px;
     }
 
-    .catalog_item{
+    /* .catalog_item{
         width: 162px;
-    }
+    } */
 
     .product_image {
-        width: 137px;
         border-radius: 12px;
-        height: 120px;
+        height: 150px;
         margin-left: auto;
         margin-right: auto;
         object-fit: cover;
@@ -506,7 +509,7 @@ footer{
 
     .catalog_list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, 162px);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .phone_number {
@@ -582,14 +585,10 @@ footer{
     }
 }
 
-
-
-@media(max-width:760px){
-    .catalogg{
-        display: block;
-        width: 520px;
+@media (max-width: 700px) {
+    .catalog_list {
+        grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media(max-width: 585px){
@@ -615,19 +614,9 @@ footer{
         display: block;
     }
 
-    .catalogg{
-        display: block;
-        width: 305px;
-    }
-
-    .catalog_item{
-        width: 142px;
-    }
-
     .product_image {
-        width: 117px;
         border-radius: 12px;
-        height: 100px;
+        height: 120px;
         margin-left: auto;
         margin-right: auto;
         object-fit: cover;
@@ -636,15 +625,6 @@ footer{
     .product_add {
         font-size: 12px;
         padding: 4px 20px;
-    }
-
-    .catalog_list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 142px);
-    }
-
-    .order_wrapper {
-        width: 280px;
     }
 
     .product_detail {
@@ -681,14 +661,8 @@ footer{
 
 
 @media(max-width: 340px){
-    .catalog_item{
-        width: 132px;
-    }
-
     .product_image {
-        width: 107px;
         border-radius: 12px;
-        height: 90px;
         margin-left: auto;
         margin-right: auto;
         object-fit: cover;
@@ -697,20 +671,6 @@ footer{
     .product_add {
         font-size: 12px;
         padding: 4px 20px;
-    }
-
-    .catalog_list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, 142px);
-    }
-
-    .order_wrapper {
-        width: 260px;
-        margin-left: 10px;
-    }
-
-    .order{
-        width: 260px;
     }
 
     .catalog_title{
